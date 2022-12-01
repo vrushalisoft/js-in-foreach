@@ -166,3 +166,60 @@ stdArray.forEach(function(std, index){
 })
  
 stdInfo.innerHTML =result2;
+
+const newspapers = [
+   {
+       name: 'thetimes',
+       address: 'https://www.thetimes.co.uk/environment/climate-change'
+   },
+   {
+       name: 'gaurdian',
+       address: 'https://www.theguardian.com/environment/climate-crisis'
+   },
+   {
+       name: 'telegraph',
+       address: 'https://www.telegraph.co.uk/climate-change'
+   }
+]
+
+var paperInfo =document.getElementById("paperInfo");
+var result = '';
+
+newspapers.forEach(function(paper, index){
+   result += ` <tr>
+                  <td>${1+index}</td>
+                  <td>${paper.name}</td>
+                  <td>${paper.address}</td>
+               </tr>`
+})
+paperInfo.innerHTML = result;
+
+let cars = [
+   {
+     "color": "purple",
+     "type": "minivan",
+     "capacity": 7
+   },
+   {
+     "color": "red",
+     "type": "station wagon",
+     "capacity": 5
+   },
+   {
+      "color": "green",
+      "type": "SUV",
+      "capacity": 5
+   },
+ ]
+var carInfo =document.getElementById("carsInfo");
+var result = '';
+
+cars.forEach(function(car, index){
+   result += ` <tr>
+                  <td>${1+index}</td>
+                  <td>${car.color}</td>
+                  <td>${car.type}</td>
+                  <td>${car.capacity}</td>
+               </tr>`
+})
+carInfo.innerHTML = result;
