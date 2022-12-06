@@ -223,3 +223,81 @@ cars.forEach(function(car, index){
                </tr>`
 })
 carInfo.innerHTML = result;
+
+var mobiles =
+[
+   { name: 'Apple iPhone 12', price: 999, color: 'Black', storage: 128, camera: 'Dual-lens' },
+   { name: 'Samsung Galaxy S21', price: 849, color: 'White', storage: 128, camera: 'Triple-lens' },
+   { name: 'Google Pixel 4a', price: 349, color: 'Black', storage: 64, camera: 'Single-lens' },
+   { name: 'OnePlus 8T', price: 799, color: 'Aquamarine Green', storage: 128, camera: 'Quad-lens' },
+   { name: 'Huawei P40 Pro', price: 799, color: 'Silver Frost', storage: 256, camera: 'Quad-lens' }
+ ]
+
+ var mobilesInfo = document.getElementById("mobilesInfo");
+ var result = '';
+
+ mobiles.forEach(function(mobile,index){
+         result += `<tr>
+                     <td>${1+index}</td>
+                     <td>${mobile.name}</td>
+                     <td>${mobile.price}</td>
+                     <td>${mobile.color}</td>
+                     <td>${mobile.storage}</td>
+                     <td>${mobile.camera}</td>
+                  </tr>`
+ })
+mobilesInfo.innerHTML = result;
+
+ var countries =
+ [
+   {
+       "name": "USA",
+       "population": 331002651,
+       "area": 9833520,
+       "capital": "Washington, D.C.",
+       "language": "English"
+   },
+   {
+       "name": "Canada",
+       "population": 37411047,
+       "area": 9984670,
+       "capital": "Ottawa",
+       "language": "English and French"
+   },
+   {
+       "name": "Mexico",
+       "population": 127575529,
+       "area": 1964375,
+       "capital": "Mexico City",
+       "language": "Spanish"
+   },
+   {
+       "name": "France",
+       "population": 66710000,
+       "area": 640679,
+       "capital": "Paris",
+       "language": "French"
+   },
+   {
+       "name": "Germany",
+       "population": 82790000,
+       "area": 357114,
+       "capital": "Berlin",
+       "language": "German"
+   }
+]
+
+var countriesInfo = document.getElementById("countriesInfo");
+var result = '';
+
+countries.forEach(function(country,index){
+        result += `<tr>
+                    <td>${1+index}</td>
+                    <td>${country.name}</td>
+                    <td>${country.population}</td>
+                    <td>${country.area}</td>
+                    <td>${country.capital}</td>
+                    <td>${country.language}</td>
+                 </tr>`
+})
+countriesInfo.innerHTML = result;
